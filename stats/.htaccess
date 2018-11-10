@@ -1,0 +1,7 @@
+AuthName "alpineairtauranga.co.nz statistics"
+AuthType Basic
+AuthUserFile /home/alpineairtauranga/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
